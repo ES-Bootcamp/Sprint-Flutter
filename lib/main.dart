@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'session_01/login_ui.dart';
+import 'session_02/custom_widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,12 +12,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Login ui',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const LoginUI(),
+    return const MaterialApp(
+      title: 'Custom widgets',
+      home: CustomWidgets(),
       debugShowCheckedModeBanner: false,
     );
   }
